@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    
+</head>
+<!--jQuery-->
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+//ocultar
+$(".ocultar").click(function(){
+    $(".mensagem").slideUp()
+})
+$(".exibir").click(function(){
+    $(".mensagem").slideDown()
+})
+
+$(".exibir").css("background-color", "blue"); 
+
+$(".ocultar").css("background-color", "red")
+$(".ocultar").css("border-color" , "blue") 
+$(".ocultar").css("border-width", 5) 
+$(".exibir").css("border-width", 5)
+$(".exibir").css("border-color" , "red")  
+$(".exibir").css("font-size", "20px")  
+$(".ocultar").css("font-size", "20px")   
+
+})
+
+
+
+</script>
+
+
+
+<body>
+    <button class="exibir"
+    style="width: 120px; height: 50px;"
+    
+
+    >Exibir</button>
+    <button class="ocultar"
+    style="width: 120px; height: 50px;"
+    >Ocultar</button>
+    <hr>
+    <h1 hidden class="mensagem">Bruno Pelentir</h1>
+    
+</body>
+</html>

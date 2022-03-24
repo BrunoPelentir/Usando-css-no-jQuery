@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FADE</title>
+    <!--jQuery-->
+<script src="jquery-3.6.0.min.js"></script>
+</head>
+<script>
+    //Ao carregar o documento
+    $(document).ready(function(){
+        //Ocultar H1
+        $("h1").css("display","none")
+        //Exibir o h1
+        $("#exibir").click(function(){
+            $("h1").fadeIn("slow")
+        })
+        $("#ocultar").click(function(){
+            $("h1").fadeOut("slow")
+        })
+        /* 
+        TEMPO do fade 
+        - Default que é o padrão = 0,4s
+        - Slow = 0,6s SEMPRE ENTRE ASPAS "SEMPREEE"
+        - pode escolher tempo que quiser = 3000 é igual a 3s e assim sucessivamente
+        */ 
+       
+        
+    })
+</script>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+
+    <h1>Programador: Bruno Rekssua Pelentir</h1>
+    
+</body>
+</html>
